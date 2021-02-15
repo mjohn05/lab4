@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="description" content="Discover information about popular video games and watch gameplay from interesting clips.">
+  <meta name="keywords" content="GameClips,Fortnite,Call of Duty,GTA 5,Gears of War 4,Battlefield 1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameClips | Home</title>
+	<link rel="stylesheet" href="index.css">
+  <style type="text/css">
+    h3 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+<a href="index.html"><img class="banner" src="assets/banner.jpg" alt="banner"></a>
+</header>
+
+<nav class="navbar navbar-default">
+<ul class="navlist">
+  <li class="navlist2"><a href="index.html">HOME</a></li>
+  <li class="navlist2"><a href="index.html">FORTNITE</a></li>
+  <li class="navlist2"><a href="index.html">CALL OF DUTY</a></li>
+  <li class="navlist2"><a href="index.html">GTA 5</a></li>
+  <li class="navlist2"><a href="index.html">GEARS OF WAR 4</a></li>
+  <li class="navlist2"><a href="index.html">BATTLEFIELD 1</a></li>
+</ul>
+</nav>
+<br>
+<main>
+<h3>VIEW CLIPS FROM POPULAR VIDEO GAMES.</h3>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="assets/bo3.jpg" alt="screenshot 1">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/mwr.jpg" alt="screenshot 2">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/gta5.jpg" alt="screenshot 3">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/bf1.jpg" alt="screenshot 4">
+</div>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</main>
+<br>
+<footer>
+&copy;GameClips 2021
+</footer>
+</body>
+</html>
